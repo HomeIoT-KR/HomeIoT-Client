@@ -1,0 +1,328 @@
+<resources>
+    <string name="app_name">HomeIoT</string>
+    <string name="app_Main">SpeechChat</string>
+
+    <!-- IntroSlide Strings -->
+    <string-array name="intro_Title">
+        <item>Welcome !</item>
+        <item>Notifications</item>
+        <item>Support Speech</item>
+        <item>Connect HomeIoT Server</item>
+        <item>Run HomeIoT</item>
+    </string-array>
+
+    <string-array name="intro_Json">
+        <item>loading.json</item>
+        <item>cooking.json</item>
+        <item>voice.json</item>
+        <item>hardware.json</item>
+        <item>load_complete.json</item>
+    </string-array>
+
+    <string-array name="intro_Desc">
+        <item>Hello. Welcome to HomeIoT app\nBefore we start using the app, we want to introduce our app. Press the arrow to continue</item>
+        <item>Even when the smartphone screen is turned off, we will inform you about the sensor operation in the house.</item>
+        <item>You can control the house from anywhere, anytime, in a word.</item>
+        <item>Enter the IP address of the server HomeIoT. \n If you use a cellular network such as 3G / LTE, charges may apply.</item>
+        <item>Click on the button below, try running HomeIoT app. </item>
+    </string-array>
+
+    <!-- InputSlide -->
+    <string name="input_ipaddr">Please enter your IP address</string>
+    <string name="connect_Btn">Connect</string>
+    <string name="connecting_Btn">Connecting....</string>
+    <string name="successConnect_Btn">Successfully connected</string>
+    <string name="inputSlide_description">Proceed to the next</string>
+
+    <!-- Voice Recognization -->
+    <string name="start_Speech">Start voice recognition</string>
+    <string name="error_Audio">There was a problem with your audio input. \nPlease check the microphone status.</string>
+    <string name="error_Permission">You do not have permission.</string>
+    <string name="error_Network">Failed to communicate with the Google APIs server. \nPlease check if Wi-Fi or LTE is turned on.</string>
+    <string name="error_noMatch">No matches found.</string>
+    <string name="error_Busy">An overload occurred. \nPlease try again in a few minutes.</string>
+    <string name="error_Server">The Google APIs server is not responding. \nPlease contact the developer.</string>
+    <string name="error_Timeout">Recognition timeout.</string>
+    <string name="speech_Menu">Speech Recognization</string>
+
+    <!-- PermissionMic -->
+    <string name="error_PermissionMic">You did not allow microphone privileges. Speech recognition is not available.</string>
+    <string name="success_PermissionMic">Microphone permission is granted. Voice recognition is now available.</string>
+
+    <!-- Drawer Menu -->
+    <string name="additional_Menu">Additional Menu</string>
+    <string name="monitoring_Menu">Monitoring</string>
+    <string name="setting_Window">Manual Windows</string>
+    <string name="setting_LED">Manual lighting</string>
+    <string name="setting_Curtain">Manual curtain</string>
+    <string name="setting_Buzzer">Manual Buzzer</string>
+
+    <string name="app_Menu">App Settings</string>
+    <string name="credit_Menu">Credit</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Speech String -->
+    <string name="recongnize_Error">I\'m sorry, I don\'t know.</string>
+    <string name="send_Error">An error occurred while sending the message.</string>
+
+    <!-- Pref String -->
+    <string name="success_Reserve">Your request was successfully processed.</string>
+    <string name="fail_Reserve">Failed to request</string>
+
+    <!-- Setting String -->
+    <string name="name_Title_1">SpeechScreen Settings</string>
+
+    <string name="first_option_1">Message size setting</string>
+    <string name="first_summary_option_1">Set Chatmessage font</string>
+
+    <string name="first_summary_option_2">When you say "벨 울려", set the number of rings</string>
+
+    <string name="name_Title_2">Network Settings</string>
+    <string name="second_option_1">QoS Settings</string>
+    <string name="second_summary_option_1">Set the QoS for message</string>
+    <string name="second_option_2">KeepAlive Settings</string>
+    <string name="second_summary_option_2">Set the KeepAlive</string>
+
+    <string name="name_Title_3">Voice screen setting</string>
+    <string name="third_option_1">Change the speech bubble text size</string>
+    <string name="third_summary_option_1">Change the size of the bubble speech recognition.e</string>
+
+    <string name="name_Title_4">Notification settings</string>
+    <string name="fourth_option_1">Select a notification tone</string>
+    <string name="fourth_summary_option_1">Sets the notification sound.</string>
+    <string name="fourth_option_2">Vibration</string>
+    <string name="fourth_summary_option_2">Set the vibration</string>
+
+    <!-- Preference List -->
+    <string name="speech_TextSize" translatable="false">speech_TextSize</string>
+    <string name="default_buzzer_Count" translatable="false">default_buzzer_Count</string>
+    <string name="ip_address" translatable="false">ip_address</string>
+    <string name="qos_value" translatable="false">qos_value</string>
+    <string name="keepAlive_value" translatable="false">keepAlive_value</string>
+    <string name="noti_ringtone" translatable="false">noti_ringtone</string>
+    <string name="noti_vibrate" translatable="false">noti_vibrate</string>
+    <string name="hIoT_init" translatable="false">hIoT_init</string>
+
+    <!-- WindowPref List -->
+    <string name="window_Stat" translatable="false">window_Stat</string>
+    <string name="window_whenRain" translatable="false">window_whenRain</string>
+    <string name="window_whenDUST" translatable="false">window_whenDUST</string>
+    <string name="window_whenTEM" translatable="false">window_whenTEM</string>
+    <string name="window_whenHUM" translatable="false">window_whenHUM</string>
+    <string name="window_whenTIME" translatable="false">window_whenTIME</string>
+
+    <!-- WindowPref Variable List -->
+    <string name="window_DUSTNum" translatable="false">window_DUSTNum</string>
+    <string name="window_TEMNum" translatable="false">window_TEMNum</string>
+    <string name="window_HUMNum" translatable="false">window_HUMNum</string>
+    <string name="window_TimeInfo" translatable="false">window_TimeInfo</string>
+
+    <!-- Preference change Message -->
+    <string name="noti_change_TextSize">It applies from the next coming and going message</string>
+    <string name="noti_change_keepAlive">Applies after restarting the app</string>
+
+    <!-- Window Common String -->
+    <string name="window_summary_option_open"> the window opens</string>
+    <string name="window_summary_option_close"> the window closes</string>
+    <string name="window_move_option">Window manipulation</string>
+    <string name="window_Angle_option">Window moving angle</string>
+    <string name="window_Angle_summary">Decide how much to open the window</string>
+    <string name="window_open">open</string>
+    <string name="window_close">closed</string>
+
+    <!-- Window String -->
+    <string name="window_Title">Window Preferences</string>
+    <string name="window_openClose_option">Window Open / Close</string>
+    <string name="window_openClose_summary_option_true">Window opened</string>
+    <string name="window_openClose_summary_option_false">Window closed</string>
+    <!-- include window_Angle_options -->
+
+    <!-- whenRain Strings (Switch) -->
+    <string name="whenRain_Title">Rain</string>
+    <string name="whenRain_option">When it rains</string>
+
+    <!-- whenRain Window Strings -->
+    <string name="window_whenRain_summary">Set the window for when it will rain</string>
+    <string name="window_whenRain_summary_option_true_1">When it rains, </string>
+    <string name="window_whenRain_summary_option_true_2">the window opens</string>
+    <string name="window_whenRain_summary_option_false">When it rains, the window closes</string>
+    <!-- include window_Angle_options -->
+
+    <!-- whenDUST Window Strings (EditText) -->
+    <string name="window_move_summary_DUST">Open and close the window according to the set dust level</string>
+
+    <!-- whenTEM Window Strings (EditText) -->
+    <string name="window_move_summary_TEM">Open and close the window according to the set temperature</string>
+
+    <!-- whenHUM Window Strings -->
+    <string name="window_move_summary_HUM">Open and close the window according to the set humidity</string>
+
+    <!-- whenDUST Strings (EditText) -->
+    <string name="whenDUST_Title">Dust</string>
+    <string name="whenDUST_option">Degree of dust</string>
+    <string name="whenDUST_option_summary">Set the degree of dust</string>
+
+    <!-- whenTEM Strings (EditText) -->
+    <string name="whenTEM_Title">Temperature</string>
+    <string name="whenTEM_option">Temperature setting</string>
+    <string name="whenTEM_option_summary">Set the temperature</string>
+
+    <!-- whenHUM Strings -->
+    <string name="whenHUM_Title">Humidity</string>
+    <string name="whenHUM_option">Humidity setting</string>
+    <string name="whenHUM_option_summary">Set the humidity</string>
+
+    <!-- whenTime Strings -->
+    <string name="whenTime_Title">Time</string>
+    <string name="whenTime_option">Time setting</string>
+    <string name="whenTime_option_summary">Set the Time</string>
+
+    <!-- LEDPref List -->
+    <string name="led_Stat" translatable="false">led_Stat</string>
+    <string name="led_Color" translatable="false">led_Color</string>
+
+    <string name="led_DUSTNum" translatable="false">led_DUSTNum</string>
+    <string name="led_TEMNum" translatable="false">led_TEMNum</string>
+    <string name="led_HUMNum" translatable="false">led_HUMNum</string>
+    <string name="ledTime_Stat" translatable="false">ledTime_Stat</string>
+    <string name="ledTime_Val" translatable="false">ledTime_Val</string>
+
+    <!-- BuzzerPref List -->
+    <string name="buzzer_Stat" translatable="false">buzzer_Stat</string>
+    <string name="buzzer_Count" translatable="false">buzzer_Count</string>
+
+    <string name="buzzer_whenRain" translatable="false">buzzer_whenRain</string>
+    <string name="buzzer_Count_whenRain" translatable="false">buzzer_Count_whenRain</string>
+
+    <string name="buzzer_whenDUST" translatable="false">buzzer_whenDUST</string>
+    <string name="buzzer_Count_whenDUST" translatable="false">buzzer_Count_whenDUST</string>
+
+    <string name="buzzer_whenTEM" translatable="false">buzzer_whenTEM</string>
+    <string name="buzzer_Count_whenTEM" translatable="false">buzzer_Count_whenTEM</string>
+
+    <string name="buzzer_whenHUM" translatable="false">buzzer_whenHUM</string>
+    <string name="buzzer_Count_whenHUM" translatable="false">buzzer_Count_whenHUM</string>
+
+    <string name="buzzer_DUSTNum" translatable="false">buzzer_DUSTNum</string>
+    <string name="buzzer_TEMNum" translatable="false">buzzer_TEMNum</string>
+    <string name="buzzer_HUMNum" translatable="false">buzzer_HUMNum</string>
+    <string name="buzzerTime_Stat" translatable="false">buzzerTime_Stat</string>
+    <string name="buzzerTime_Val" translatable="false">buzzerTime_Val</string>
+
+    <!-- Common Commands -->
+    <string name="angle" translatable="false">도</string>
+
+    <!-- Window Commands -->
+    <string name="window_command" translatable="false">창문</string>
+    <string name="window_open_command" translatable="false">열어</string>
+    <string name="window_close_command" translatable="false">닫어</string>
+
+    <!-- LED Commands -->
+    <string name="led_r_command">빨간 불 </string>
+    <string name="led_g_command">초록 불 </string>
+    <string name="led_b_command">파란 불 </string>
+
+    <string name="led_on_command">켜</string>
+    <string name="led_off_command">꺼</string>
+
+    <!-- Buzzer Commands -->
+    <string name="buzzer_command">벨 </string>
+    <string name="buzzer_on_command">울려</string>
+    <string name="buzzer_off_command">멈춰</string>
+
+    <!-- whenRain Commands -->
+    <string name="whenRain_command">비오면</string>
+
+    <!-- whenDUST Commands -->
+    <string name="whenDUST_command">먼지가 </string>
+    <string name="whenDUST_ifelse_command">일 때 </string>
+
+    <!-- whenTem Commands -->
+    <string name="whenTEM_command">온도가 </string>
+    <string name="whenTEM_ifelse_command">이면</string>
+
+    <!-- whenHum Commands -->
+    <string name="whenHUM_command">습도가</string>
+    <string name="whenHUM_ifelse_command">이면</string>
+
+    <!-- LED Strings -->
+    <string name="led_Title">LED Preferences</string>
+    <string name="led_Red_onoff">Red LED On / Off</string>
+    <string name="led_Green_onoff">Green LED On / Off</string>
+    <string name="led_Blue_onoff">Blue LED On / Off</string>
+    <string name="led_onOff_summary_On">LED turn on</string>
+    <string name="led_onOff_summary_Off">LED turn off</string>
+
+    <!-- LED Pref Strings -->
+    <string name="led_r" translatable="false">&lt;LED_R&gt;</string>
+    <string name="led_g" translatable="false">&lt;LED_G&gt;</string>
+    <string name="led_b" translatable="false">&lt;LED_B&gt;</string>
+
+    <string name="led_r_whenRain" translatable="false">LED_R_whenRain</string>
+    <string name="led_g_whenRain" translatable="false">LED_G_whenRain</string>
+    <string name="led_b_whenRain" translatable="false">LED_B_whenRain</string>
+
+    <string name="led_r_whenDUST" translatable="false">LED_R_whenDUST</string>
+    <string name="led_g_whenDUST" translatable="false">LED_G_whenDUST</string>
+    <string name="led_b_whenDUST" translatable="false">LED_B_whenDUST</string>
+
+    <string name="led_r_whenTEM" translatable="false">LED_R_whenTEM</string>
+    <string name="led_g_whenTEM" translatable="false">LED_G_whenTEM</string>
+    <string name="led_b_whenTEM" translatable="false">LED_B_whenTEM</string>
+
+    <string name="led_r_whenHUM" translatable="false">LED_R_whenHUM</string>
+    <string name="led_g_whenHUM" translatable="false">LED_G_whenHUM</string>
+    <string name="led_b_whenHUM" translatable="false">LED_B_whenHUM</string>
+
+    <string name="led_r_whenTIME" translatable="false">LED_R_whenTIME</string>
+    <string name="led_g_whenTIME" translatable="false">LED_G_whenTIME</string>
+    <string name="led_b_whenTIME" translatable="false">LED_B_whenTIME</string>
+
+    <!-- LED Time Strings -->
+    <string name="led_time_Title">Time Preference of LED On / Off</string>
+
+    <string name="led_rev_Title">LED Time module On / Off</string>
+    <string name="led_rev_time_summary">LED Time module enable / disable</string>
+
+    <string name="led_timeset_Title">LED Set the Time turn On / Off</string>
+    <string name="led_timeset_summary">LED Set the Time turn On / Off</string>
+
+    <!-- Buzzer Strings -->
+    <string name="buzzer_Title">Buzzer Preferences</string>
+    <string name="buzzer_onOff_option">Turn buzzer on / off</string>
+    <string name="buzzer_Count_option">Set the number of rings</string>
+    <string name="buzzer_Count_summary">Sets the number of rings.</string>
+    <string name="buzzer_onOff_summary_On">Buzzer turn On</string>
+    <string name="buzzer_onOff_summary_Off">Buzzer turn Off</string>
+
+    <!-- SwitchPreference common -->
+    <string name="switch_Off">Off</string>
+    <string name="switch_On">On</string>
+
+    <!-- SensorMonitoring -->
+    <string name="high_temperature">Current temperature is too high</string>
+    <string name="high_dust">Fine dust concentration is very bad</string>
+    <string name="high_humidity">Current humidity is too high</string>
+    <string name="normal_temperature">Current temperature is good</string>
+    <string name="normal_dust">Fine dust concentration is good</string>
+    <string name="normal_humidity">Current humidity is good</string>
+    <string name="weather_sunny_Title">Sunny</string>
+    <string name="weather_sunny">The weather is sunny.</string>
+    <string name="weather_rainny_Title">Raining</string>
+    <string name="weather_rainny">It is raining.</string>
+    <string name="monitoring_error">Failed to get sensor data value. Please check server / network status.</string>
+
+    <!-- Credit -->
+    <string name="policy_license">OpenSource License</string>
+
+    <!-- HomeIoT Service publish, sucscribe Topic -->
+    <string name="pub_Topic" translatable="false">HomeIoT_Server</string>
+    <string name="sub_Topic" translatable="false">HomeIoT_Return</string>
+    <string name="setting_Light">Manual lighting</string>
+    <string name="settings_App">App Settings</string>
+
+    <!-- Team Member Name -->
+    <string name="develop_Server">Eunsung Kim</string>
+    <string name="hardware_arch">Nayeon Ahn</string>
+    <string name="develop_Android">KwangSoo Jeong</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <PreferenceCategory
+        android:title="@string/buzzer_Title">
+
+        <SwitchPreference
+            android:title="@string/buzzer_onOff_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/buzzer_onOff_summary_Off"
+            android:key="@string/buzzer_Stat" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/buzzer_Count_option"
+            android:summary="@string/buzzer_Count_summary"
+            android:defaultValue="5"
+            android:key="@string/buzzer_Count" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenRain_Title">
+
+        <SwitchPreference
+            android:title="@string/buzzer_onOff_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/buzzer_onOff_summary_Off"
+            android:key="@string/buzzer_whenRain"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/buzzer_Count_option"
+            android:summary="@string/buzzer_Count_summary"
+            android:defaultValue="1"
+            android:key="@string/buzzer_Count_whenRain" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenDUST_Title">
+
+        <SwitchPreference
+            android:title="@string/buzzer_onOff_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/buzzer_onOff_summary_Off"
+            android:key="@string/buzzer_whenDUST"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/buzzer_Count_option"
+            android:summary="@string/buzzer_Count_summary"
+            android:defaultValue="1"
+            android:key="@string/buzzer_Count_whenDUST" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenDUST_option"
+            android:summary="@string/whenDUST_option_summary"
+            android:defaultValue="0"
+            android:max="20"
+            android:key="@string/buzzer_DUSTNum"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenTEM_Title">
+
+        <SwitchPreference
+            android:title="@string/buzzer_onOff_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/buzzer_onOff_summary_Off"
+            android:key="@string/buzzer_whenTEM"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/buzzer_Count_option"
+            android:summary="@string/buzzer_Count_summary"
+            android:defaultValue="1"
+            android:key="@string/buzzer_Count_whenTEM" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenTEM_option"
+            android:summary="@string/whenTEM_option_summary"
+            android:defaultValue="0"
+            android:max="180"
+            android:key="@string/buzzer_TEMNum"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenHUM_Title">
+
+        <SwitchPreference
+            android:title="@string/buzzer_onOff_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/buzzer_onOff_summary_Off"
+            android:key="@string/buzzer_whenHUM"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/buzzer_Count_option"
+            android:summary="@string/buzzer_Count_summary"
+            android:defaultValue="1"
+            android:key="@string/buzzer_Count_whenHUM" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenHUM_option"
+            android:summary="@string/whenHUM_option_summary"
+            android:defaultValue="0"
+            android:max="180"
+            android:key="@string/buzzer_HUMNum"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

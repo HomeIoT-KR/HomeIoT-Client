@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TODO: HomeIoT Sensor Topic -->
+    <string-array name="sensorList">
+        <item>HomeIoT_Temperature</item>
+        <item>HomeIoT_Humidity</item>
+        <item>HomeIoT_Dust</item>
+        <item>HomeIoT_Rain</item>
+        <item>HomeIoT_Return</item>
+    </string-array>
+
+    <string-array name="moveCommand">
+        <item>WINDOWS</item>
+        <item>BUZZER</item>
+        <item>LED_R</item>
+        <item>LED_G</item>
+        <item>LED_B</item>
+    </string-array>
+
+    <string-array name="rValList">
+        <item>Dust_WINDOWS_Rval</item>
+        <item>Dust_BUZZER_Rval</item>
+        <item>Dust_LED_Rval</item>
+    </string-array>
+
+    <string-array name="rActList">
+        <item>Dust_WINDOWS_RAct</item>
+        <item>Dust_BUZZER_RAct</item>
+        <item>Dust_LED_RAct</item>
+    </string-array>
+
+    <string-array name="listfontSize">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="listfontValues">
+        <item>15sp</item>
+        <item>20sp</item>
+        <item>30sp</item>
+    </string-array>
+</resources>

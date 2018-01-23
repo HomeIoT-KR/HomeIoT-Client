@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.view.floatButton_menu.right.activities.LEDActivity">
+
+    <PreferenceCategory
+        android:title="@string/led_Title">
+
+        <SwitchPreference
+            android:title="@string/led_Red_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_r" />
+
+        <SwitchPreference
+            android:title="@string/led_Green_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_g"/>
+
+        <SwitchPreference
+            android:title="@string/led_Blue_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_b"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenRain_Title">
+
+        <SwitchPreference
+            android:title="@string/led_Red_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_r_whenRain"/>
+
+        <SwitchPreference
+            android:title="@string/led_Green_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_g_whenRain"/>
+
+        <SwitchPreference
+            android:title="@string/led_Blue_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_b_whenRain"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenDUST_Title">
+
+        <SwitchPreference
+            android:title="@string/led_Red_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_r_whenDUST"/>
+
+        <SwitchPreference
+            android:title="@string/led_Green_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_g_whenDUST"/>
+
+        <SwitchPreference
+            android:title="@string/led_Blue_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_b_whenDUST"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenDUST_option"
+            android:summary="@string/whenDUST_option_summary"
+            android:defaultValue="0"
+            android:max="20"
+            android:key="@string/led_DUSTNum"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenTEM_Title">
+
+        <SwitchPreference
+            android:title="@string/led_Red_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_r_whenTEM"/>
+
+        <SwitchPreference
+            android:title="@string/led_Green_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_g_whenTEM"/>
+
+        <SwitchPreference
+            android:title="@string/led_Blue_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_b_whenTEM"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenTEM_option"
+            android:summary="@string/whenTEM_option_summary"
+            android:defaultValue="35"
+            android:max="55"
+            android:key="@string/led_TEMNum"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenHUM_Title">
+
+        <SwitchPreference
+            android:title="@string/led_Red_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_r_whenHUM"/>
+
+        <SwitchPreference
+            android:title="@string/led_Green_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_g_whenHUM"/>
+
+        <SwitchPreference
+            android:title="@string/led_Blue_onoff"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/led_onOff_summary_Off"
+            android:key="@string/led_b_whenHUM"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenHUM_option"
+            android:summary="@string/whenHUM_option_summary"
+            android:max="100"
+            android:key="@string/led_HUMNum"/>
+
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory
+        android:title="@string/led_time_Title">
+
+        <SwitchPreference
+            android:title="@string/led_rev_Title"
+            android:defaultValue="false"
+            android:switchTextOff="중지"
+            android:switchTextOn="작동"
+            android:summary="@string/led_rev_time_summary"
+            android:key="@string/ledTime_Stat" />
+
+     xyz.neonkid.homeiot.main.viewview.custom_dialog.TimePreference
+            android:title="@string/led_timeset_Title"
+            android:dependency="@string/ledTime_Stat"
+            android:enabled="false"
+            android:summary="@string/led_timeset_summary"
+            android:key="@string/ledTime_Val" />
+
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>

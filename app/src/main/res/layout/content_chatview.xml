@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chatLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fadeScrollbars="true"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/show_AppSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="10dp"
+        fab:menu_icon="@drawable/ic_settings_white_18dp"
+        fab:menu_colorNormal="@android:color/transparent"
+        fab:menu_colorRipple="@color/menu_clicked"
+        fab:menu_buttonSpacing="10dp"
+        fab:menu_labels_position="right"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_labels_colorNormal="@android:color/transparent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/monitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_visibility_white_18dp"
+            fab:fab_size="mini"
+            fab:fab_label="@string/monitoring_Menu" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/settings_Main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_applications_white_18dp"
+            fab:fab_size="mini"
+            fab:fab_label="@string/app_Menu" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_copyright_white_18dp"
+            fab:fab_size="mini"
+            fab:fab_label="@string/credit_Menu" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/input_Speech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="10dp"
+        android:focusable="auto"
+        android:src="@drawable/ic_mic_white_24dp"
+        fab:fab_progress_color="@color/menu_Normal"
+        fab:fab_colorNormal="@color/menu_Normal" />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="10dp"
+        fab:menu_icon="@drawable/ic_manual_white_27dp"
+        fab:menu_colorNormal="@android:color/transparent"
+        fab:menu_colorRipple="@color/menu_clicked"
+        fab:menu_buttonSpacing="10dp"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_labels_colorNormal="@android:color/transparent">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/settings_Window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_window_white_27dp"
+            fab:fab_size="mini"
+            fab:fab_label="@string/setting_Window" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/settings_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ledlight_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="@string/setting_LED" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/settings_Buzzer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification_white_24dp"
+            fab:fab_size="mini"
+            fab:fab_label="@string/setting_Buzzer"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

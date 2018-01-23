@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.view.floatButton_menu.right.activities.WindowActivity">
+
+    <PreferenceCategory
+        android:title="@string/window_Title">
+
+        <SwitchPreference
+            android:title="@string/window_openClose_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/window_openClose_summary_option_false"
+            android:key="@string/window_Stat" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenRain_Title">
+
+        <SwitchPreference
+            android:title="@string/whenRain_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/window_whenRain_summary"
+            android:key="@string/window_whenRain" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenDUST_Title">
+
+        <SwitchPreference
+            android:title="@string/window_move_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/window_move_summary_DUST"
+            android:key="@string/window_whenDUST" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenDUST_option"
+            android:summary="@string/whenDUST_option_summary"
+            android:defaultValue="0"
+            android:max="20"
+            android:key="@string/window_DUSTNum" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenTEM_Title">
+
+        <SwitchPreference
+            android:title="@string/window_move_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/window_move_summary_TEM"
+            android:key="@string/window_whenTEM" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenTEM_option"
+            android:summary="@string/whenTEM_option_summary"
+            android:defaultValue="35"
+            android:max="55"
+            android:key="@string/window_TEMNum" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/whenHUM_Title">
+
+        <SwitchPreference
+            android:title="@string/window_move_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/window_move_summary_HUM"
+            android:key="@string/window_whenHUM"/>
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/whenHUM_option"
+            android:summary="@string/whenHUM_option_summary"
+            android:max="100"
+            android:key="@string/window_HUMNum"/>
+
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory
+        android:title="@string/whenTime_Title">
+
+        <SwitchPreference
+            android:title="@string/window_move_option"
+            android:defaultValue="false"
+            android:switchTextOff="@string/switch_Off"
+            android:switchTextOn="@string/switch_On"
+            android:summary="@string/whenTime_option_summary"
+            android:key="@string/window_whenTIME"/>
+
+     xyz.neonkid.homeiot.main.viewview.custom_dialog.TimePreference
+            android:title="@string/whenTime_option"
+            android:summary="@string/whenTime_option_summary"
+            android:key="@string/window_TimeInfo"/>
+
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>

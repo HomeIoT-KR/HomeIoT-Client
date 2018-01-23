@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.view.floatButton_menu.left.activities.credit.CreditActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/primary_toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/member_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/member_view"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Using Open Source Library" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                android:text="* ButterKnife \n (https://github.com/JakeWharton/butterknife)"
+                android:autoLink="web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="* Eclipse Paho \n (https://github.com/eclipse/paho.mqtt.java)"
+                android:autoLink="web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="* Lottie \n (https://github.com/airbnb/lottie-android)"
+                android:autoLink="web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="* FloatingActionButton \n (https://github.com/Clans/FloatingActionButton)"
+                android:autoLink="web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="* RoundLetterView \n (https://github.com/pavlospt/RoundedLetterView)"
+                android:autoLink="web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="* AppIntro \n (https://github.com/apl-devs/AppIntro)"
+                android:autoLink="web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="* Facebook Stetho \n (https://github.com/facebook/stetho)"
+                android:autoLink="web"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="* LeakCanary \n (https://github.com/square/leakcanary)"
+                android:autoLink="web"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

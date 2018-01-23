@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">HomeIoT</string>
+    <string name="app_Main">음성 인식 제어</string>
+
+    <!-- IntroSlide Strings -->
+    <string-array name="intro_Title">
+        <item>환영합니다</item>
+        <item>실시간 알림</item>
+        <item>음성 지원</item>
+        <item>HomeIoT 서버 연결</item>
+        <item>설정 완료</item>
+    </string-array>
+
+    <string-array name="intro_Desc">
+        <item>안녕하세요. HomeIoT 앱에 오신 것을 환영합니다.\n먼저 앱을 사용하기 전에, 저희 앱에 대한 소개를 하려합니다. 화살표를 눌러 다음으로 진행해주세요.</item>
+        <item>스마트폰 화면이 꺼진 상태에서도 집 안의 센서 동작을 알려드립니다.</item>
+        <item>언제 어디서든지 말 한마디로, 집 안을 제어할 수 있습니다. </item>
+        <item>HomeIoT 서버의 IP 주소를 입력하십시오. \n 3G/LTE 등의 셀룰러 네트워크를 이용할 경우, \n 요금이 부과될 수 있습니다.</item>
+        <item>아래 버튼을 클릭하여, HomeIoT 앱을 실행해보세요. </item>
+    </string-array>
+
+    <!-- InputSlide -->
+    <string name="input_ipaddr">IP 주소를 입력하세요.</string>
+    <string name="connect_Btn">연결</string>
+    <string name="connecting_Btn">연결 중....</string>
+    <string name="successConnect_Btn">성공적으로 연결되었습니다.</string>
+    <string name="inputSlide_description">다음으로 진행하세요.</string>
+
+    <!-- Voice Recognization -->
+    <string name="start_Speech">음성 인식을 시작합니다</string>
+    <string name="error_Audio">오디오 입력에 문제가 발생했습니다. \n마이크 상태를 확인해주세요.</string>
+    <string name="error_Permission">권한이 없습니다.</string>
+    <string name="error_Network">Google API 서버와 통신에 실패했습니다. \n네트워크 상태를 확인해주세요.</string>
+    <string name="error_noMatch">일치하는 항목이 없습니다.</string>
+    <string name="error_Busy">과부하가 발생했습니다. \n잠시 후 다시 시도해주세요.</string>
+    <string name="error_Server">Google API 서버가 응답하지 않습니다. \n관리자에게 문의해주세요.</string>
+    <string name="error_Timeout">인식 시간이 초과되었습니다.</string>
+
+    <!-- PermissionMic -->
+    <string name="error_PermissionMic">권한을 허용하지 않으면 음성 인식이 되지 않습니다!</string>
+    <string name="success_PermissionMic">권한을 허용했습니다. 이제부터 음성 인식을 사용할 수 있습니다.</string>
+
+    <!-- Drawer Menu -->
+    <string name="setting_Window">창문 수동 제어</string>
+    <string name="setting_LED">LED 수동 제어</string>
+    <string name="setting_Light">조명 수동 제어</string>
+    <string name="setting_Buzzer">벨 수동 제어</string>
+
+    <string name="settings_App">앱 설정</string>
+    <string name="monitoring_Menu">센서 모니터링</string>
+    <string name="app_Menu">앱 설정</string>
+    <string name="credit_Menu">HomeIoT 정보</string>
+
+    <!-- Speech String -->
+    <string name="recongnize_Error">죄송해요. 제가 모르는 말이에요.</string>
+    <string name="send_Error">메시지를 보내는 중, 오류가 발생했어요.</string>
+
+    <!-- Pref String -->
+    <string name="success_Reserve">요청이 정상 처리되었습니다.</string>
+    <string name="fail_Reserve">요청을 수행하지 못했습니다</string>
+
+    <!-- Setting String -->
+    <string name="name_Title_1">음성 인식 설정</string>
+    <string name="first_option_1">메시지 크기 설정</string>
+    <string name="first_summary_option_1">메시지 상자의 크기를 설정합니다.</string>
+
+    <string name="first_summary_option_2">"벨 울려" 라고 했을 때, 벨 울릴 횟수 설정</string>
+
+    <string name="name_Title_2">네트워크 설정</string>
+    <string name="second_option_1">QoS 설정</string>
+    <string name="second_summary_option_1">메시지의 QoS를 설정합니다</string>
+    <string name="second_option_2">KeepAlive 설정</string>
+    <string name="second_summary_option_2">서버와의 KeepAlive 값을 설정합니다</string>
+
+    <string name="name_Title_3">음성 화면 설정</string>
+    <string name="third_option_1">말풍선 글씨 크기 변경</string>
+    <string name="third_summary_option_1">음성 인식의 말풍선 크기를 변경합니다.</string>
+
+    <string name="name_Title_4">알림 설정</string>
+    <string name="fourth_option_1">알림음 선택</string>
+    <string name="fourth_summary_option_1">알림 소리를 설정합니다.</string>
+    <string name="fourth_option_2">진동</string>
+    <string name="fourth_summary_option_2">진동을 설정합니다</string>
+
+    <!-- whenRain Strings (Switch) -->
+    <string name="whenRain_Title">비</string>
+    <string name="whenRain_option">비가 올 경우</string>
+
+    <!-- whenDUST Strings (EditText) -->
+    <string name="whenDUST_Title">먼지</string>
+    <string name="whenDUST_option">먼지 설정</string>
+    <string name="whenDUST_option_summary">먼지 정도를 설정합니다.</string>
+
+    <!-- whenTEM Strings (EditText) -->
+    <string name="whenTEM_Title">온도</string>
+    <string name="whenTEM_option">온도 설정</string>
+    <string name="whenTEM_option_summary">온도를 설정합니다.</string>
+
+    <!-- whenHUM Strings -->
+    <string name="whenHUM_Title">습도</string>
+    <string name="whenHUM_option">습도 설정</string>
+    <string name="whenHUM_option_summary">습도를 설정합니다.</string>
+
+    <!-- whenTime Strings -->
+    <string name="whenTime_Title">시간</string>
+    <string name="whenTime_option">시간 설정</string>
+    <string name="whenTime_option_summary">시간을 설정합니다.</string>
+
+    <!-- Preference change Message -->
+    <string name="noti_change_TextSize">다음 오고가는 메시지부터 적용됩니다</string>
+    <string name="noti_change_keepAlive">앱 재시작 후에 적용됩니다</string>
+
+    <!-- Window Common String -->
+    <string name="window_summary_option_open"> 창문이 열립니다</string>
+    <string name="window_summary_option_close"> 창문이 닫힙니다</string>
+    <string name="window_move_option">창문 조작</string>
+    <string name="window_Angle_option">창문 이동 각도</string>
+    <string name="window_Angle_summary">창문을 얼마나 열고 을지 결정합니다.</string>
+    <string name="window_open">열림</string>
+    <string name="window_close">닫힘</string>
+
+    <!-- Window Strings -->
+    <string name="window_Title">창문 기본 설정</string>
+    <string name="window_openClose_option">창문 열기 / 닫기</string>
+    <string name="window_openClose_summary_option_true">창문이 열렸습니다</string>
+    <string name="window_openClose_summary_option_false">창문이 닫혔습니다</string>
+    <!-- include window_Angle_options -->
+
+    <!-- whenRain Window Strings -->
+    <string name="window_whenRain_summary">비가 올 경우에 대한 창문을 설정합니다</string>
+    <string name="window_whenRain_summary_option_true_1">비가 오면 창문이 </string>
+    <string name="window_whenRain_summary_option_true_2">도 만큼 열립니다</string>
+    <string name="window_whenRain_summary_option_false">비가 오면 창문이 닫힙니다</string>
+
+    <!-- whenDUST Window Strings (EditText) -->
+    <string name="window_move_summary_DUST">설정된 먼지 정도에 따라 창문을 열고 닫습니다</string>
+
+    <!-- whenTEM Window Strings (EditText) -->
+    <string name="window_move_summary_TEM">설정된 온도에 따라 창문을 열고 닫습니다</string>
+
+    <!-- whenHUM Window Strings -->
+    <string name="window_move_summary_HUM">설정된 습도에 따라 창문을 열고 닫습니다</string>
+
+    <!-- LED Strings -->
+    <string name="led_Title">조명 기본 설정</string>
+    <string name="led_Red_onoff">빨간불 켜기 / 끄기</string>
+    <string name="led_Green_onoff">초록불 켜기 / 끄기</string>
+    <string name="led_Blue_onoff">파란불 켜기 / 끄기</string>
+    <string name="led_onOff_summary_On">조명을 켰습니다</string>
+    <string name="led_onOff_summary_Off">조명을 껐습니다</string>
+
+    <!-- LED Time Strings -->
+    <string name="led_time_Title">조명 켜고 끄는 시간 설정</string>
+
+    <string name="led_rev_Title">조명 시간 켜기 / 끄기</string>
+    <string name="led_rev_time_summary">조명 시간 기능을 켜고 끕니다</string>
+
+    <string name="led_timeset_Title">조명 시간 설정</string>
+    <string name="led_timeset_summary">조명을 켜고 끄는 시간을 설정합니다</string>
+
+    <!-- Buzzer Strings -->
+    <string name="buzzer_Title">벨 기본 설정</string>
+    <string name="buzzer_onOff_option">벨 켜기 / 끄기</string>
+    <string name="buzzer_Count_option">벨 횟수 설정</string>
+    <string name="buzzer_Count_summary">벨 울림 횟수를 설정합니다.</string>
+    <string name="buzzer_onOff_summary_On">벨이 울립니다</string>
+    <string name="buzzer_onOff_summary_Off">벨이 꺼졌습니다</string>
+
+    <!-- SwitchPreference common -->
+    <string name="switch_Off">꺼짐</string>
+    <string name="switch_On">켜짐</string>
+
+    <!-- LED Commands -->
+    <string name="led_on_command">켜</string>
+    <string name="led_off_command">꺼</string>
+
+    <!-- Buzzer Commands -->
+    <string name="buzzer_command">벨 </string>
+    <string name="buzzer_on_command">울려</string>
+    <string name="buzzer_off_command">멈춰</string>
+
+    <!-- SensorMonitoring -->
+    <string name="high_temperature">현재 온도가 너무 높습니다.</string>
+    <string name="high_dust">미세 먼지 농도가 매우 나쁩니다.</string>
+    <string name="high_humidity">현재 습도가 너무 높습니다.</string>
+    <string name="normal_temperature">현재 온도가 양호합니다.</string>
+    <string name="normal_dust">미세 먼지 농도가 보통입니다.</string>
+    <string name="normal_humidity">현재 습도가 양호합니다.</string>
+    <string name="weather_sunny_Title">맑음</string>
+    <string name="weather_sunny">날씨가 화창합니다.</string>
+    <string name="weather_rainny_Title">비</string>
+    <string name="weather_rainny">비가 내리고 있습니다.</string>
+    <string name="monitoring_error">센서 데이터 값을 가져오는 데, 실패했습니다. 서버/네트워크 상태를 확인해주세요.</string>
+
+    <!-- Credit -->
+    <string name="policy_license">오픈소스 라이선스</string>
+
+    <!-- Team Member Name -->
+    <string name="develop_Server">김 은 성</string>
+    <string name="hardware_arch">안 나 연</string>
+    <string name="develop_Android">정 광 수</string>
+</resources>

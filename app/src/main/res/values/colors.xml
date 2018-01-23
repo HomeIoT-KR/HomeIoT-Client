@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#B3E5FC</color>
+    <color name="color_primary_dark">#000000</color>
+    <color name="color_accent">#18FFFF</color>
+    <color name="color_darkness">#9E9E9E</color>
+    <color name="color_mask">#700000</color>
+    <color name="speech_ListenReady">#CDDC39</color>
+    <color name="speech_Listening">#8BC34A</color>
+    <color name="speech_Success">#2196F3</color>
+    <color name="speech_Fail">#F44336</color>
+    <color name="mic_Color">#FFF</color>
+
+    <!-- Floating Menu color -->
+    <color name="menu_Normal">#1565C0</color>
+    <color name="menu_clicked">#18FFFF</color>
+
+    <!-- Splash Design color -->
+    <color name="splash_primary">#2196F3</color>
+    <color name="intro_Button">#1976D2</color>
+
+    <!-- Settings / Manual Activity color -->
+    <color name="manual_background">#FFF</color>
+    <color name="manual_primary">#1565C0</color>
+
+    <!-- Monitoring Activity color -->
+    <color name="monitoring_primary">#8BC34A</color>
+</resources>

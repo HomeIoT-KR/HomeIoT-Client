@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.view.floatButton_menu.left.activities.SettingsActivity">
+
+    <PreferenceCategory
+        android:title="@string/name_Title_1">
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/first_option_1"
+            android:summary="@string/first_summary_option_1"
+            android:key="@string/speech_TextSize"
+            android:defaultValue="15"
+            android:max="40"
+            android:min="15" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/buzzer_Count_option"
+            android:summary="@string/first_summary_option_2"
+            android:key="@string/default_buzzer_Count"
+            android:defaultValue="5"
+            android:max="20"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/name_Title_2">
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/second_option_1"
+            android:summary="@string/second_summary_option_1"
+            android:key="@string/qos_value"
+            android:defaultValue="0"
+            android:max="2" />
+
+        <xyz.neonkid.homeiot.main.view.custom_dialog.SeekbarPreference
+            android:title="@string/second_option_2"
+            android:summary="@string/second_summary_option_2"
+            android:key="@string/keepAlive_value"
+            android:defaultValue="60"
+            android:max="300" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/name_Title_4">
+
+        <RingtonePreference
+            android:title="@string/fourth_option_1"
+            android:summary="@string/fourth_summary_option_1"
+            android:key="@string/noti_ringtone"
+            android:defaultValue="content://settings/system/notification_sound"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true" />
+
+        <CheckBoxPreference
+            android:title="@string/fourth_option_2"
+            android:summary="@string/fourth_summary_option_2"
+            android:key="@string/noti_vibrate"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

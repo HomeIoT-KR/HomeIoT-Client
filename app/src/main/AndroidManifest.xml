@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="xyz.neonkid.homeiot">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".HomeIoTApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true">
+        <activity
+            android:name=".main.view.SplashActivity"
+            android:theme="@style/AppSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".main.view.intro.IntroActivity"
+            android:theme="@style/AppSplash"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name=".main.view.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".main.view.floatButton_menu.left.activities.MonitoringActivity"
+            android:theme="@style/SubAppTheme" />
+        <activity
+            android:name=".main.view.floatButton_menu.left.activities.credit.CreditActivity"
+            android:theme="@style/SubAppTheme"/>
+        <activity
+            android:name=".main.view.floatButton_menu.left.activities.credit.LicenseActivity"
+            android:theme="@style/SubAppTheme" />
+        <activity
+            android:name=".main.view.floatButton_menu.left.activities.SettingsActivity"
+            android:theme="@style/PreferenceLocalTheme"
+            android:label="Preferences"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity
+            android:name=".main.view.floatButton_menu.right.activities.WindowActivity"
+            android:theme="@style/PreferenceLocalTheme"/>
+        <activity
+            android:name=".main.view.floatButton_menu.right.activities.LEDActivity"
+            android:theme="@style/PreferenceLocalTheme"/>
+        <activity
+            android:name=".main.view.floatButton_menu.right.activities.BuzzerActivity"
+            android:theme="@style/PreferenceLocalTheme"/>
+
+        <service android:name=".main.service.MainMessagingService"/>
+
+        <receiver
+            android:name=".main.receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".main.receiver.PackageReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
